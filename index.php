@@ -301,14 +301,16 @@
         <ul class="nav">
           <?php
             foreach($routes_array as $key => $route) {
-              ?>
-                <li class="nav-item" <?php if($route['link'] === $component['link']) {echo 'data-active="true"';} ?>>
-                  <a class="nav-link" href="index.php<?php echo '?route='.$key; ?>">
-                    <i class="<?php echo $route['icon']; ?>"></i>
-                    <span class="menu-title"><?php echo $route['name']; ?></span>
-                  </a>
-                </li>
-              <?php
+              if($route['isList']){
+                ?>
+                  <li class="nav-item" <?php if($route['link'] === $component['link']) {echo 'data-active="true"';} ?>>
+                    <a class="nav-link" href="index.php<?php echo '?route='.$key; ?>">
+                      <i class="<?php echo $route['icon']; ?>"></i>
+                      <span class="menu-title"><?php echo $route['name']; ?></span>
+                    </a>
+                  </li>
+                <?php
+              }
             }
           ?>
           

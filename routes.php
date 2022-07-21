@@ -3,14 +3,16 @@
         'dashboard' => array(
             'link' => './components/dashboard.php',
             'name' => 'Dashboard',
-            'icon' => 'icon-grid menu-icon'
+            'icon' => 'icon-grid menu-icon',
+            'isList' => true
         ),
 
 
         'contacts' => array(
             'link' => './components/contact-list.php',
             'name' => 'Contact',
-            'icon' => 'mdi mdi-account-card-details menu-icon'
+            'icon' => 'mdi mdi-account-card-details menu-icon',
+            'isList' => true
         )
     );
     $component = $routes_array['dashboard'];
