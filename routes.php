@@ -15,6 +15,7 @@
             'isList' => true
         ),
 
+<<<<<<< HEAD
         //campaigns
         'campaigns' => array(
             'link' => './components/campaign-list.php',
@@ -27,6 +28,13 @@
             'name' => 'Create Campaign',
             'icon' => 'mdi mdi-sale menu-icon',
             'isList' => false
+=======
+        'Add Contact' => array(
+            'link' => './components/contact-form.php',
+            'name' => 'addcontact',
+            'icon' => 'mdi mdi mdi-account-plus',
+            'isList' => true
+>>>>>>> f2866a4a26acf9d177ca12a29a54230737f024f7
         )
     );
     $component = $routes_array['dashboard'];
